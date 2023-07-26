@@ -9,3 +9,5 @@ class Dialects(enum):
     min_fuzhou = 6
     jin_taiyuan = 7
     gan_nanchang = 8
+
+    # I honestly have no idea what to do with this, I just made it because I saw it in the lecture
