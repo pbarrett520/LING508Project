@@ -1,7 +1,7 @@
 import pytest
 from app.character import *
+from app.dialect_enums import *
 from app.pronunciation import *
-import re
 
 def test_character():
     character = Chinese_character("大")
@@ -11,4 +11,9 @@ def test_character():
     assert bad_input.hanzi_error == bad_input.HANZI_ERROR
 
 def test_pronunciation():
-    pass
+    pron = Pronunciation(Chinese_character("大"), Dialect.STANDARD_MANDARIN)
+    bad_pron = Pronunciation("大", "Wuzhouese")
+    assert isinstance(pron.hanzi, Chinese_character), "Must be type Chinese_character"
+    assert isinstance(pron.dialect, Dialect), "Must be type dialect"
+    assert bad_pron.hanzi == None, "Checking character input for wrong data type"
+    assert bad_pron.dialect == None, "Checking dialect input for wrong data type"

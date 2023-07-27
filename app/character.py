@@ -1,5 +1,3 @@
-import unicodedata
-
 class Chinese_character:
     HANZI_ERROR = "亲爱的用户，请输入一个汉子.\nDear user, please enter one Chinese character."
     def __init__(self, hanzi):
@@ -21,6 +19,4 @@ class Chinese_character:
         if cjk_range[0] <= code_point and code_point <= cjk_range[1]:
             return True
         else:
-            return False
-
-# None of this can really be tested properly without a web scraping component, so I'll test the skeletons for now.
+            return False()
