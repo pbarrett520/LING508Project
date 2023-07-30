@@ -1,0 +1,291 @@
+三:
+  Mandarin: sān,sàn(san1,san4)
+  Cantonese: saam3,saam1
+  Hakka: sâm
+  Wu: /sɑmH/
+  Xiang: san1
+  Min Nan: sàm
+  Jin: san1
+  Gan: san1
+
+上:
+  Mandarin: shàng(shang4)
+  Cantonese: soeng5
+  Hakka: sông / sóng
+  Wu: 3zaan
+  Xiang: shan5/ shan4
+  Min Nan: chiūⁿ/chiōⁿ/chiǔⁿ/chhiūⁿ/chhiōⁿ/chhiǔⁿ
+  Jin: son3/ hon3
+  Gan: song5
+
+丌:
+  Mandarin: qí(qi2)
+
+不:
+  Mandarin: fǒu(fou3)
+  Cantonese: fau2
+  Wu: /piuX/
+  Min Nan: houn2
+
+丑:
+  Mandarin: chǒu(chou3)
+  Cantonese: cau2
+  Hakka: chhú
+  Xiang: chou3
+  Min Nan: thiú/thiúⁿ
+  Gan: ciiu3
+
+且:
+  Mandarin: jū(ju1)
+  Cantonese: zeoi1,ceoi2
+  Hakka: chhiá
+  Wu: /t͡siɔ/
+  Min Nan: chu/chir
+  Jin: chhiáⁿ
+
+丕:
+  Mandarin: bù(bu4)
+  Cantonese: pei1
+  Wu: /pʰᵚi/
+  Min Nan: phi
+
+丞:
+  Mandarin: zhěng(zheng3)
+  Cantonese: cing2
+  Hakka: sṳ̀n
+  Wu: 3zen
+  Min Nan: sêng
+
+並:
+  Mandarin: bàng(bang4)
+  Cantonese: bong6
+  Hakka: pin
+  Wu: 3bin
+  Min Nan: pēng/pěng/phēng
+
+中:
+  Mandarin: zhòng(zhong4)
+  Cantonese: zung3
+  Hakka: chung
+  Wu: 2tson
+  Xiang: zhong4
+  Min Nan: tiòng/tèng/thàng
+  Jin: zung3
+  Gan: zung4
+
+串:
+  Mandarin: guàn(guan4)
+  Cantonese: gwaan3
+  Hakka: chhon
+  Wu: /kʷᵚanH/
+  Min Nan: chhǹg/chhoàn
+
+丸:
+  Mandarin: huán(huan2)
+  Cantonese: wun4
+
+主:
+  Mandarin: zhù(zhu4)
+  Cantonese: zyu2
+  Hakka: chú
+  Wu: 2tsr
+  Xiang: jy3
+  Min Nan: chú/chí
+  Jin: zu2
+  Gan: jy3
+
+丼:
+  Mandarin: dǎn,dōng,dòng(dan3,dong1,dong4)
+  Cantonese: dong1
+  Hakka: tung
+
+丿:
+  Mandarin: yì(yi4)
+  Cantonese: pit3
+  Hakka: phiet
+  Wu: /jiɛiH/
+  Min Nan: phiat
+
+乂:
+  Mandarin: ài(ai4)
+  Cantonese: ngaai6
+  Wu: /ŋiɐiH/
+
+乃:
+  Cantonese: nai4, nai4*
+
+乇:
+  Mandarin: tuō(tuo1)
+  Cantonese: tok3
+
+乍:
+  Min Nan: chàⁿ
+
+乎:
+  Min Nan: hō͘
+
+乘:
+  Mandarin: shèng,chéng(sheng4,cheng2)
+  Cantonese: sing6
+  Hakka: sṳn
+  Wu: /ʑɨŋH/
+  Xiang:
+  Min Nan: sēng
+  Jin:
+
+乙:
+  Mandarin: yǐ(yi3)
+
+乜:
+  Mandarin: miē(mie1)
+  Cantonese: me1,me2,me5
+  Min Nan: mi1
+
+乞:
+  Mandarin: qì(qi4)
+  Cantonese: hei3
+  Hakka: khiet / khié / khiat
+  Wu: /kʰɨiH/
+  Xiang: qi6
+  Min Nan: khit/khì
+  Jin: qieh4
+  Gan: qit6
+
+乾:
+  Mandarin: qián(qian2)
+  Cantonese: kin4
+  Hakka: khièn / khiàn
+  Wu: 3jji
+  Min Nan: kiân/khiân
+
+亂:
+  Mandarin: luàn(luan4)
+  Cantonese: lyun6,lyun6-2
+  Hakka: lon
+  Wu: 3loe
+  Xiang: lonn4/ lonn5
+  Min Nan: ruang6/ ruêng6
+  Jin: luan3
+  Gan: lon5
+
+亃:
+  Mandarin: lìn,lín(lin4,lin2)
+  Cantonese: leon6
+
+了:
+  Mandarin: liǎo(liao3)
+  Cantonese: liu5
+  Hakka: liáu
+  Wu: 3liau
+  Min Nan: liáu
+  Gan: lieu3
+  Xiang: liau3
+  Jin: liau2
+
+予:
+  Min Nan: hō͘/thō͘/hǒ͘
+  Jin: thō͘
+
+事:
+  Mandarin: zì(zi4)
+  Cantonese: si6
+  Hakka: sṳ / se
+  Wu: /ʈ͡ʂɨH/
+  Xiang: sr5/ sr4
+  Min Nan: sū/sīr/sǐr/sī/tāi
+  Jin: si3
+  Gan: si5
+
+于:
+  Mandarin: yū(yu1)
+
+互:
+  Min Nan: hō͘
+
+五:
+  Mandarin: wǔ(wu3)
+  Cantonese: wu1
+
+些:
+  Mandarin: suò(suo4)
+  Cantonese: so3,sai3,so1
+  Wu: /sɑH/
+
+亞:
+  Mandarin: yà,yǎ
+  Cantonese: aa3
+  Hakka: á / â
+  Wu: 1ia
+  Xiang: ia4
+  Min Nan: a
+  Jin: ia3
+  Gan: nga3
+
+亟:
+  Mandarin: qì(qi4)
+  Cantonese: kei3
+  Wu: /kʰɨH/
+
+亡:
+  Mandarin: wú(wu2)
+  Cantonese: mou4
+  Hakka: mòng
+  Wu: 3vaan;3maan
+  Min Nan: bông
+
+亢:
+  Mandarin: háng(hang2)
+  Cantonese: gong1
+  Wu: /kɑŋ/
+
+交:
+  Min Nan: kiau
+
+亨:
+  Mandarin: pēng(peng1)
+  Cantonese: paang1
+  Hakka: hên / khiên / khiân
+  Wu: /pʰᵚiaŋ/
+  Xiang:
+  Min Nan: heng
+  Jin:
+
+亶:
+  Mandarin: zhān(zhan1)
+  Cantonese: sin4
+
+亹:
+  Mandarin: mén(men2)
+  Cantonese: mun4
+  Wu: /muon/
+
+人:
+  Min Nan: lāng/lǎng/lâng
+  Jin: lâng
+
+亿:
+  Cantonese: ji1,ji6
+
+什:
+  Mandarin: shí(shi2)
+  Cantonese: sap6,zaap6
+  Wu: 5zeq
+  Min Nan: zab8
+  Hakka: sṳ̍p
+
+仂:
+  Mandarin: lì(li4)
+  Cantonese: lik6
+  Wu: /lɨk̚/
+
+仇:
+  Mandarin: qiú(qiu2)
+  Cantonese: kau4
+  Hakka: sù
+  Wu: 3jjieu
+  Xiang:
+  Min Nan: kiû
+  Jin:
+
+今:
+  Min Nan: taⁿ

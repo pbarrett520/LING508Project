@@ -17,3 +17,5 @@ def test_pronunciation():
     assert isinstance(pron.dialect, Dialect), "Must be type dialect"
     assert bad_pron.hanzi == None, "Checking character input for wrong data type"
     assert bad_pron.dialect == None, "Checking dialect input for wrong data type"
+
+def test_read_data:
