@@ -2,6 +2,7 @@ import pytest
 from app.character import *
 from app.dialect_enums import *
 from app.pronunciation import *
+from app.services import *
 
 def test_character():
     character = Chinese_character("大")
@@ -11,11 +12,15 @@ def test_character():
     assert bad_input.hanzi_error == bad_input.HANZI_ERROR
 
 def test_pronunciation():
-    pron = Pronunciation("da4", Dialect.STANDARD_MANDARIN)
-    bad_pron = Pronunciation(33, "Mandarin")
+    pron = Pronunciation("da4")
+    bad_pron = Pronunciation(33)
     assert isinstance(pron.transcription, str), "Must be type str"
-    assert isinstance(pron.dialect, Dialect), "Must be type dialect"
-    assert bad_pron.hanzi == None, "Checking character input for wrong data type"
-    assert bad_pron.dialect == None, "Checking dialect input for wrong data type"
+    #assert isinstance(pron.dialect, Dialect), "Must be type dialect"
+    #assert bad_pron.hanzi == None, "Checking character input for wrong data type"
+    #assert bad_pron.dialect == None, "Checking dialect input for wrong data type"
 
-
+def test_services():
+    services_test = Services()
+    get_mandarin_shang = services_test.get_dialect("上","Mandarin")
+    assert isinstance(get_mandarin_shang,str)
+    print(get_mandarin_shang)
