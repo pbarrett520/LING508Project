@@ -14,9 +14,15 @@ class MysqlRepository():
         self.cursor = self.connection.cursor()
 
 
-    def get_entries(self):
+    def get_all_entries(self):
         self.cursor.execute("SELECT * FROM Pronunciations;")
         entries = self.cursor.fetchall()
-        print(entries)
-
+        #print(entries)
         return entries
+
+    def get_row(self, hanzi):
+        query = "SELECT * FROM Pronunciations WHERE chinese_character = %s;"
+        self.cursor.execute(query, (hanzi,))
+        row = self.cursor.fetchone()
+        #print(row)
+        return row

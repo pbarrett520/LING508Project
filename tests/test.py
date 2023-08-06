@@ -11,11 +11,11 @@ def test_character():
     assert bad_input.hanzi_error == bad_input.HANZI_ERROR
 
 def test_pronunciation():
-    pron = Pronunciation(Chinese_character("大"), Dialect.STANDARD_MANDARIN)
-    bad_pron = Pronunciation("大", "Wuzhouese")
-    assert isinstance(pron.hanzi, Chinese_character), "Must be type Chinese_character"
+    pron = Pronunciation("da4", Dialect.STANDARD_MANDARIN)
+    bad_pron = Pronunciation(33, "Mandarin")
+    assert isinstance(pron.transcription, str), "Must be type str"
     assert isinstance(pron.dialect, Dialect), "Must be type dialect"
     assert bad_pron.hanzi == None, "Checking character input for wrong data type"
     assert bad_pron.dialect == None, "Checking dialect input for wrong data type"
 
-def test_read_data:
+

@@ -1,18 +1,18 @@
-from .dialect_enums import *
-from .character import *
-
+#from dialect_enums import *
+# I still don't get what I'm supposed to do with these enums, and they
+# aren't importing for some reason anyway. Let's just nuke this feature for now
 class Pronunciation:
         def __init__(self,
-                     hanzi: Chinese_character,
-                     dialect:Dialect):
+                     transcription: str,):
+                     #dialect: Dialect):
 
 
-                if isinstance(hanzi,Chinese_character)== False:
-                     self.hanzi = None
-                else:
-                     self.hanzi = hanzi
+            if not isinstance(transcription, str):
+                self.transcription = None
+            else:
+                self.transcription = transcription
 
-                if isinstance(dialect, Dialect) == False:
-                        self.dialect = None
-                else:
-                        self.dialect = dialect
+            #if not isinstance(dialect, Dialect):
+                    #self.dialect = None
+            #else:
+                    #self.dialect = dialect
