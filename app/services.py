@@ -14,7 +14,7 @@ class Services:
         output_template = f"{character.hanzi}: {character.english_gloss}\nDialect: {dialect}\nPronunciation: {pronunciation.transcription}"
         return output_template
 
-if __name__ == '__main__':
+if __name__ == '__main__': #Doesn't work this way either
     def test_services():
         services_test = Services()
         get_mandarin_shang = services_test.get_dialect("上","Mandarin")

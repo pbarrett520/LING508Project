@@ -28,7 +28,6 @@ class MysqlRepository():
         return row
 
     def get_pronunciation(self, hanzi, dialect):
-        # Ensure the dialect is a valid column name to prevent SQL injection
         valid_dialects = ['Mandarin', 'Cantonese', 'Hakka', 'Wu', 'Xiang', 'MinNan', 'Jin', 'Gan']
         if dialect not in valid_dialects:
             raise ValueError(f"Invalid dialect: {dialect}")
@@ -38,7 +37,7 @@ class MysqlRepository():
         result = self.cursor.fetchone()
 
         if result is None:
-            return None  # or handle however you prefer
+            return None
         else:
-            return result[0]  # the first and only column in the result
+            return result[0]
 

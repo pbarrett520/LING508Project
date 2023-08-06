@@ -1,4 +1,4 @@
-from sinopy import chars2gloss
+from sinopy import chars2gloss # This project could be helpful for adding future features
 
 class Chinese_character:
     HANZI_ERROR = "亲爱的用户，请输入一个汉子.\nDear user, please enter one Chinese character."
