@@ -22,5 +22,8 @@ def test_pronunciation():
 def test_services():
     services_test = Services()
     get_mandarin_shang = services_test.get_dialect("上","Mandarin")
-    assert isinstance(get_mandarin_shang,str)
+    get_cantonese_shang = services_test.get_dialect("上","Cantonese")
+    assert isinstance(get_mandarin_shang, str)
+    assert isinstance(get_cantonese_shang, str)
     print(get_mandarin_shang)
+    print(get_cantonese_shang)
