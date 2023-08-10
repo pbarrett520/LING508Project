@@ -18,7 +18,7 @@
     <option value="Gan">Gan</option>
 </select>
 </div>
-<form action="/url" method="GET">
+<form onsubmit="getDialect(); return false;">
         <p>Enter Chinese Character:</p>
         <input type="text" name="character" placeholder="好" required>
         <button type="submit">Submit</button>
@@ -26,5 +26,30 @@
 <div id="characterDialectInfo">
 
 </div>
+<script>
+  function getDialect() {
+    var character = document.getElementsByName('character')[0].value;
+    var dialect = document.getElementById('dialect').value;
+
+    fetch('/get_dialect', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        character: character,
+        dialect: dialect,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById('characterDialectInfo').innerHTML = "Character: " + data.character + "<br>Gloss: " + data.gloss + "<br>Pronunciation: " + data.pronunciation;
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }
+</script>
+
 </body>
 </html>
