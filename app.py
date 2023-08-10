@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, Response, json
+from flask import Flask, request, jsonify, Response, json, make_response
 from flask_cors import CORS, cross_origin
 from logging.config import dictConfig
 
@@ -33,22 +33,24 @@ def doc() -> str:
     with open("doc.html", "r") as f:
         return f.read()
 
-@app.route("/get_dialect", methods=["GET"])
+@app.route("/get_dialect", methods=["POST"])
 def get_dialect():
     try:
-        character = request.args.get("character")
-        dialect = request.args.get("dialect")
+        character = request.json['character']
+        dialect = request.json['dialect']
+
         if not character or not dialect:
             response_content = '{"error": "Both character and dialect must be provided"}'
             return Response(response_content, status=400, content_type="application/json; charset=utf-8")
 
         result = services.get_dialect(character, dialect)
-        response_content = f'{{"result": "{result}"}}'
-        return Response(response_content, content_type="application/json; charset=utf-8")
+        #return jsonify(result)
+        return make_response(json.dumps(result, ensure_ascii=False))
 
     except Exception as e:
         response_content = f'{{"error": "{str(e)}"}}'
         return Response(response_content, status=500, content_type="application/json; charset=utf-8")
+
 
 
 if __name__ == "__main__":

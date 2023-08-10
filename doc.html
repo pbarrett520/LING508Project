@@ -5,6 +5,26 @@
     <title>Chinese Dialect Pronunciations</title>
 </head>
 <body>
+<div>
+    <label for="dialect">Select a Chinese Dialect:</label>
+<select name="dialect" id="dialect">
+  <option value="Mandarin">Mandarin</option>
+  <option value="Cantonese">Cantonese</option>
+  <option value="Hakka">Hakka</option>
+  <option value="Wu">Wu</option>
+    <option value="Xiang">Xiang</option>
+    <option value="Min">Min</option>
+    <option value="Jin">Jin</option>
+    <option value="Gan">Gan</option>
+</select>
+</div>
+<form action="/url" method="GET">
+        <p>Enter Chinese Character:</p>
+        <input type="text" name="character" placeholder="好" required>
+        <button type="submit">Submit</button>
+    </form>
+<div id="characterDialectInfo">
 
+</div>
 </body>
 </html>
