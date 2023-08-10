@@ -1,5 +1,6 @@
 import mysql.connector
-
+from app.character import Chinese_character
+from app.pronunciation import Pronunciation
 class MysqlRepository():
 
     def __init__(self):
@@ -20,12 +21,12 @@ class MysqlRepository():
         #print(entries)
         return entries
 
-    def get_row(self, hanzi):
+    def get_character(self, hanzi):
         query = "SELECT * FROM Pronunciations WHERE chinese_character = %s;"
         self.cursor.execute(query, (hanzi,))
         row = self.cursor.fetchone()
         #print(row)
-        return row
+        return Chinese_character(row[1])
 
     def get_pronunciation(self, hanzi, dialect):
         valid_dialects = ['Mandarin', 'Cantonese', 'Hakka', 'Wu', 'Xiang', 'MinNan', 'Jin', 'Gan']
@@ -39,5 +40,5 @@ class MysqlRepository():
         if result is None:
             return None
         else:
-            return result[0]
+            return Pronunciation(result[0])
 
