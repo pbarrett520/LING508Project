@@ -37,18 +37,6 @@ def extract_romanizations_from_section(section_content): # I wanted to select th
                 romanizations[dialect] = romanization_tag.get_text(strip=True)
     return romanizations
 
-
-def save_to_file_no_blanks(filename, data):
-    """Saves the scraped pronunciations to a text file without blank entries."""
-    with open(filename, 'w', encoding='utf-8') as file:
-        for char, pronunciations in data.items():
-            if pronunciations:
-                file.write(f"{char}:\n")
-                for dialect, pronunciation in pronunciations.items():
-                    file.write(f"  {dialect}: {pronunciation}\n")
-                file.write("\n")
-
-
 # Begin scraping
 all_pronunciations = {}
 start_unicode = 0x4E00  # Let's just iterate through characters by their unicode encodings. Frequency may be arguably a better criteria, but this was more convenient.
@@ -73,6 +61,16 @@ while len(all_pronunciations) < 50: # Let's arbitratily grab 50 and see what we 
         all_pronunciations[char] = combined_romanizations
 
     current_char += 1
+
+def save_to_file_no_blanks(filename, data):
+    """Saves the scraped pronunciations to a text file without blank entries."""
+    with open(filename, 'w', encoding='utf-8') as file:
+        for char, pronunciations in data.items():
+            if pronunciations:
+                file.write(f"{char}:\n")
+                for dialect, pronunciation in pronunciations.items():
+                    file.write(f"  {dialect}: {pronunciation}\n")
+                file.write("\n")
 
 # Save the results to a text file
 save_to_file_no_blanks("pronunciations1.txt", all_pronunciations)
