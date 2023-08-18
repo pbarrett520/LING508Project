@@ -1,0 +1,6 @@
+pytest
+beautifulsoup4
+mysql
+Flask
+flask-cors
+sinopy
