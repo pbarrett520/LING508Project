@@ -12,7 +12,7 @@ class Chinese_character:
             self.hanzi_error = Chinese_character.HANZI_ERROR
 
     @staticmethod
-    def __is_single_chinese_character__(character):
+    def __is_single_chinese_character__(character: str) -> bool:
         if len(character) != 1:
             return False
         # Check if string belongs to CJK unicode block
@@ -24,5 +24,5 @@ class Chinese_character:
             return False
 
     @staticmethod
-    def __get_english_gloss__(character):
+    def __get_english_gloss__(character: str) -> str:
         return ' '.join(chars2gloss(character))
